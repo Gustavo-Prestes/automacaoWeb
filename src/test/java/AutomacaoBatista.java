@@ -2,10 +2,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.*;
 
@@ -13,105 +10,102 @@ import java.util.Random;
 
 public class AutomacaoBatista {
 
-    private static //Criar instancia do driver do chrome
-            WebDriver driver;
-
+    //Criar instancia do driver do chrome
+    private static WebDriver driver;
     private static WebDriverWait wait;
 
     @BeforeAll
-    public static void setup() {
-
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+    public static void setup(){
+        //Setar as propriedades do chrome Driver
+        System.setProperty("./src/main/resources/chromedriver","chromedriver");
         driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 10);
-        //setar as propriedades do Chrome Driver
-        //abrir browser e acessar URL
-        //maximizando o Browser Windows
-        driver.manage().window().maximize();
-        driver.get("https://automacaocombatista.herokuapp.com/users/new");
-
-
-    }
-
-    @Test
-    public void radioCheckBox() {
-        driver.get("https://automacaocombatista.herokuapp.com/buscaelementos/radioecheckbox");
-        driver.findElement(By.xpath("//label [@for ='red']")).click();
-        driver.findElement(By.xpath("//label [@for ='blue']")).click();
-        driver.findElement(By.xpath("//label [@for ='yellow']")).click();
-        driver.findElement(By.xpath("//label [@for ='green']")).click();
-        driver.findElement(By.xpath("//label [@for ='purple']")).click();
-        driver.findElement(By.xpath("//label [@for ='grey']")).click();
-        driver.findElement(By.xpath("//label [@for ='black']")).click();
-        driver.findElement(By.xpath("//label [@for ='white']")).click();
-
-    }
-
-    @Test
-    public void select (){
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Dropdown e Select']")));
-        driver.findElement(By.xpath("//a[text()='Busca de elementos']"));
-
-        driver.findElement(By.xpath("//a [text()='Dropdown e Select']")).click();
-
-        driver.findElement(By.xpath("//label[text()='Desenho Favorito']/preceding-sibling::div[@class='select-wrapper']"));
-        driver.findElement(By.xpath("//span [text()='Dragon Ball']")).click();
-
-        driver.findElement(By.xpath("//span [text()='Ronaldinho Gaucho']/ancestor::ul/preceding-sibling::input")).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='Dragon Ball']"))).click();
-
-        WebElement listaSelecao =  driver.findElement(By.xpath("//select[@id='dropdown']"));
-        JavascriptException js = (JavascriptException)driver;
-
-        Select listaDesenhoFavorito = new Select(listaSelecao);
-
-        listaDesenhoFavorito.selectByIndex(1);
-
-        listaDesenhoFavorito.selectByValue("3");
-
-        listaDesenhoFavorito.selectByVisibleText("Internet Explorer");
-
-    }
-
-    @AfterAll
-    public static void fecharBrowser() {
-        driver.quit();
+        wait = new WebDriverWait(driver,90);
+        //Abrir browser e acessar a URL
+        driver.get("https://automacaocombatista.herokuapp.com");
+        //Maximizando o Browser Windows
+        //driver.manage().window().maximize();
+        driver.findElement(By.xpath("//a[text()='Começar Automação Web']")).click();
+        //Maximizando o Browser Mac/Linux
+        driver.manage().window().fullscreen();
     }
 
     @Test
     public void criarUsuario() {
-        //maximizando o Browser Windows
-        driver.manage().window().maximize();
-        driver.get("https://automacaocombatista.herokuapp.com/users/new");
 
         Random random = new Random();
-        random.nextInt(1000);
-        String email = "gustavo" + random.nextInt() + "@gmail.com.br";
-        //setar as propriedades do Chrome Driver
+        String email = random.nextInt(10000)+"@bootcamp.com.br";
 
+        //Identificando um elemento e preenchendo o campo com um texto
+        driver.findElement(By.xpath("//a[text()='Formulário']")).click();
+        //Thread.sleep(30000); má pratica
 
-        //Maximizando o Browser Mac/Linux
-        //driver.manage().window().fullscreen();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Criar Usuários']")));
 
+        driver.findElement(By.xpath("//a[text()='Criar Usuários']")).click();
 
-            //Identificando um elemento e preenchendo o campo com um texto
-            driver.findElement(By.xpath("//a[text()= 'Formulário']")).click();
-            driver.findElement(By.xpath("//a[text()= 'Criar Usuários']")).click();
-            driver.findElement(By.xpath("//input [@id ='user_name' ]")).sendKeys("Gustavo");
-            driver.findElement(By.xpath("//input [@id ='user_lastname']")).sendKeys("Prestes");
-            driver.findElement(By.xpath("//input [@name = 'user[email]']")).sendKeys(email);
-            driver.findElement(By.xpath("//input [@name = 'user[address]']")).sendKeys("Estrada Tambory");
-            driver.findElement(By.xpath("//input [@name = 'user[university]']")).sendKeys("USPADO MLK");
-            driver.findElement(By.xpath("//input [@name = 'user[profile]']")).sendKeys("Comedor de Casadas");
-            driver.findElement(By.xpath("//input [@name = 'user[gender]']")).sendKeys("Helicoptero de Combate");
-            //Thread.sleep(6000); má pratica
-            driver.findElement(By.xpath("//input [@name = 'user[age]']")).sendKeys("24");
-            driver.findElement(By.xpath("//div [@class = 'actions btn waves-effect green']")).click();
-            //Atribuindo o texto da mensagem na tela para a variavel
-            String mensagem = driver.findElement(By.xpath("//p[@id='notice']")).getText();
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.id("user_name")));
+        driver.findElement(By.id("user_name")).sendKeys("Marcos");
+        driver.findElement(By.id("user_lastname")).sendKeys("Barbosa");
+        driver.findElement(By.id("user_email")).sendKeys(email);
+        driver.findElement(By.id("user_address")).sendKeys("Avenida Trindade");
+        driver.findElement(By.id("user_university")).sendKeys("Nenhuma");
+        driver.findElement(By.id("user_profile")).sendKeys("Qa");
+        driver.findElement(By.id("user_gender")).sendKeys("M");
+        driver.findElement(By.id("user_age")).sendKeys("18");
 
-            Assertions.assertEquals("Usuário Criado com sucesso", mensagem);
+        //Clicando no botao Criar
+        driver.findElement(By.name("commit")).click();
 
-        }
+        //Atribuindo o texto da mensagem na tela para a variável
+        String mensagem = driver.findElement(By.xpath("//p[@id='notice']")).getText();
+
+        //Validando se a mensagem que eu necessito está sendo exibida na tela
+        Assertions.assertEquals("Usuário Criado com sucesso", mensagem);
     }
 
+    @Test
+    public void radioCheckBox(){
+
+        driver.findElement(By.xpath("//a[text()='Busca de elementos']")).click();
+
+        WebElement link = driver.findElement(By.xpath("//a[text()='Radio e Checkbox']"));
+        wait.until(ExpectedConditions.visibilityOf(link));
+        link.click();
+
+    }
+
+    @Test
+    public void select(){
+        driver.findElement(By.xpath("//a[text()='Busca de elementos']")).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Dropdown e Select']")));
+
+        driver.findElement(By.xpath("//a[text()='Dropdown e Select']")).click();
+
+        driver.findElement(By.xpath("//label[text()='Desenho Favorito']/preceding-sibling::div[@class='select-wrapper']")).click();
+        driver.findElement(By.xpath("//span[text()='Dragon Ball']")).click();
+
+        driver.findElement(By.xpath("//span[text()='Ronaldinho Gaucho']/ancestor::ul/preceding-sibling::input")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='Ronaldinho Gaucho']")));
+        driver.findElement(By.xpath("//span[text()='Ronaldinho Gaucho']")).click();
+
+        WebElement segundoCombo1 = driver.findElement(By.xpath("//span[text()='Ronaldinho Gaucho']/ancestor::ul/preceding-sibling::input"));
+
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+
+        js.executeScript("arguments[0].click();", segundoCombo1);
+
+        WebElement listaSelecao = driver.findElement(By.xpath("//select[@id='dropdown']"));
+        Select listaDesenhoFavorito = new Select(listaSelecao);
+
+        listaDesenhoFavorito.selectByIndex(1);
+
+//        listaDesenhoFavorito.selectByValue("3");
+//
+//        listaDesenhoFavorito.selectByVisibleText("Internet Explorer");
+    }
+    @AfterAll
+    public static void fecharBrowser(){
+        //Fechando meu navagador
+        driver.quit();
+    }
+}
