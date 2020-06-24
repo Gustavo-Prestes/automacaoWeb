@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d0b8f291-c09c-4aa8-95ae-716f9fec6154" name="Default Changelist" comment="3 commit" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/develop" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1dNJqa4XKGy1rJNuQsgDWEElJxa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.36324787" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Guh01\OneDrive\Área de Trabalho\Programacao\Aulas Yaman\automacaoWeb" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SrBarriga">
+    <configuration name="SrBarriga" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SrBarriga" />
+      <module name="automacaoWeb" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutomacaoBatista" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automacaoWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AutomacaoBatista" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutomacaoBatista.criarUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automacaoWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AutomacaoBatista" />
+      <option name="METHOD_NAME" value="criarUsuario" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutomacaoBatista.radioCheckBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automacaoWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AutomacaoBatista" />
+      <option name="METHOD_NAME" value="radioCheckBox" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutomacaoBatista.select" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automacaoWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AutomacaoBatista" />
+      <option name="METHOD_NAME" value="select" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AutomacaoBatista.select" />
+        <item itemvalue="JUnit.AutomacaoBatista.radioCheckBox" />
+        <item itemvalue="JUnit.AutomacaoBatista.criarUsuario" />
+        <item itemvalue="JUnit.AutomacaoBatista" />
+        <item itemvalue="Application.SrBarriga" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0b8f291-c09c-4aa8-95ae-716f9fec6154" name="Default Changelist" comment="" />
+      <created>1592259808230</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592259808230</updated>
+    </task>
+    <task id="LOCAL-00001" summary="second commit">
+      <created>1592874297457</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592874297457</updated>
+    </task>
+    <task id="LOCAL-00002" summary="second commit">
+      <created>1593037056949</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593037056950</updated>
+    </task>
+    <task id="LOCAL-00003" summary="second commit">
+      <created>1593037477058</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593037477058</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="RELOAD_CONTEXT" value="false" />
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1325" y="383" key="#Notifications" timestamp="1593037363877">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1325" y="383" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1593037363877" />
+    <state x="1245" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1592873042199">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1245" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592873042199" />
+    <state x="967" y="87" key="CommitChangelistDialog2" timestamp="1593037476366">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="967" y="87" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593037476366" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592868910493">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592868910493" />
+    <state x="588" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1592866182194">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="588" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040@0.0.1920.1040" timestamp="1592866182194" />
+    <state width="914" height="318" key="GridCell.Tab.0.bottom" timestamp="1592875962502">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="318" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592875962502" />
+    <state width="914" height="318" key="GridCell.Tab.0.center" timestamp="1592875962502">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="318" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592875962502" />
+    <state width="914" height="318" key="GridCell.Tab.0.left" timestamp="1592875962502">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="318" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592875962502" />
+    <state width="914" height="318" key="GridCell.Tab.0.right" timestamp="1592875962502">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="318" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592875962502" />
+    <state x="880" y="98" key="SettingsEditor" timestamp="1592868920121">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="880" y="98" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592868920121" />
+    <state x="1032" y="253" key="Vcs.Push.Dialog.v2" timestamp="1593037488538">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593037488538" />
+    <state x="1249" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593037134443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1249" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593037134443" />
+    <state x="1103" y="236" key="git4idea.branch.GitSmartOperationDialog" timestamp="1592866011845">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="236" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592866011845" />
+  </component>
+</project>
